@@ -18,6 +18,14 @@ html {
   font-size: 10px;
 }
 
+@font-face {
+  font-family: "ITC Avant Garde Gothic Pro";
+  src: url("/fonts/avantgardepro/ITCAvantGardePro-Bk.otf") format("opentype");
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/avenir/Avenir.ttc") format("truetype");
+}
 .prev,
 .next {
   display: none;
