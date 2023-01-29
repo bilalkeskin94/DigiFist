@@ -22,10 +22,6 @@ html {
   font-family: "ITC Avant Garde Gothic Pro";
   src: url("/fonts/avantgardepro/ITCAvantGardePro-Bold.otf") format("opentype");
 }
-@font-face {
-  font-family: "Avenir";
-  src: url("/fonts/avenir/Avenir.ttc") format("truetype");
-}
 .prev,
 .next {
   display: none;
