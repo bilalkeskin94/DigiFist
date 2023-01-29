@@ -1,17 +1,17 @@
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 :root {
+  --color-cyan: #99c4cc;
+  --color-green: #a6cc99;
+  --color-orchid: #cc9999;
   --color-primary: #000000;
+  --color-purple: #cb99cc;
   --color-secondary: ##666666;
   --color-white: #fff;
-  --color-cyan: #99c4cc;
-  --color-orchid: #cc9999;
-  --color-purple: #cb99cc;
-  --color-green: #a6cc99;
 }
 
 html {
@@ -42,24 +42,16 @@ html {
   padding: 0 0 0 2.4rem;
 }
 
-.hide-slide {
-  display: none;
-}
-
-.show-slide {
-  display: flex;
-}
-
 .banner-header {
-  display: block;
   color: var(--color-white);
+  display: block;
   font-family: "ITC Avant Garde Gothic Pro", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.6rem;
-  width: 31.2rem;
   position: absolute;
   top: 27rem;
+  width: 31.2rem;
 }
 
 .banner-text,
@@ -68,27 +60,27 @@ html {
 }
 
 .hero-banner {
-  display: block;
-  width: 100%;
-  height: 50rem;
   background: url("/images/bannermobile.jpg") no-repeat center top/cover;
-  padding: 0;
+  display: block;
+  height: 50rem;
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .shop-link {
   color: var(--color-white);
   font-family: "Avenir", sans-serif;
-  font-weight: 900;
   font-size: 1.3rem;
+  font-weight: 900;
   line-height: 1.7rem;
-  width: 146px;
-  text-transform: capitalize;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
   position: absolute;
-  white-space: nowrap;
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-underline-offset: 1rem;
   top: 36.6rem;
+  white-space: nowrap;
+  width: 146px;
 }
 .shop-link:hover {
   color: var(--color-white);
@@ -96,11 +88,11 @@ html {
 
 .cart {
   display: flex;
-  width: 610px;
   gap: 1.2rem;
+  overflow: hidden;
   position: relative;
   top: -7rem;
-  overflow: hidden;
+  width: 610px;
 }
 .cart--items {
   flex-direction: column;
@@ -110,34 +102,34 @@ html {
   flex-direction: column;
 }
 .cart--image {
-  width: 14.8rem;
   height: 20rem;
+  width: 14.8rem;
 }
 .cart--header {
   color: var(--color-primary);
   font-family: "Avenir", sans-serif;
-  font-weight: 400;
   font-size: 1.3rem;
+  font-weight: 400;
   line-height: 2rem;
   margin-top: 1.2rem;
 }
 .cart--text {
   color: var(--color-primary);
   font-family: "Avenir", sans-serif;
-  font-weight: 500;
   font-size: 1.2rem;
+  font-weight: 500;
   line-height: 2rem;
   margin-top: 0.4rem;
 }
 .cart .swatch-container {
-  gap: 0.7rem;
   display: flex;
+  gap: 0.7rem;
   margin-top: 0.8rem;
 }
 .cart .swatch {
-  width: 1.2rem;
-  height: 1.2rem;
   border-radius: 50%;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 .cart .swatch.active {
   border: 1px solid var(--color-primary);
@@ -171,14 +163,14 @@ html {
     padding: 9.6rem 10.6rem 0 12rem;
   }
   .hero-banner {
+    background-size: cover;
+    background: url("/images/banner.jpg") no-repeat center top;
     display: block;
     height: 100vh;
-    width: 100%;
-    background: url("/images/banner.jpg") no-repeat center top;
-    background-size: cover;
-    padding: 0;
     margin: 0;
+    padding: 0;
     position: relative;
+    width: 100%;
   }
   .banner-header {
     display: none;
@@ -189,71 +181,71 @@ html {
     font-family: "ITC Avant Garde Gothic Pro", sans-serif;
     font-size: 3.1rem;
     line-height: 4.1rem;
-    width: 49.4rem;
     position: relative;
     top: 0;
+    width: 49.4rem;
   }
   .banner-text {
-    display: block;
     color: var(--color-secondary);
+    display: block;
     font-family: "Avenir", sans-serif;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.6rem;
-    margin-top: 1.2rem;
     line-height: 2.6rem;
+    margin-top: 1.2rem;
     width: 43.2rem;
   }
   .shop-link {
     color: var(--color-primary);
     position: relative;
-    top: 3.2rem;
     text-underline-offset: 1rem;
+    top: 3.2rem;
   }
   .shop-link:hover {
     color: var(--color-secondary);
   }
   .cart {
     display: flex;
-    width: 610px;
     gap: 3.2rem;
     position: relative;
     top: 5rem;
+    width: 610px;
   }
   .cart--items {
-    margin-top: 6.8rem;
     gap: 3.2rem;
+    margin-top: 6.8rem;
   }
   .cart--items--container {
     display: flex;
     flex-direction: row;
   }
   .cart--image {
-    width: 23rem;
     height: 31rem;
+    width: 23rem;
   }
   .cart .swatch-container {
+    float: right;
     gap: 0.9rem;
     margin-left: auto;
-    float: right;
   }
   .prev,
 .next {
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    color: white;
     cursor: pointer;
+    font-weight: bold;
+    height: 4rem;
+    margin-top: -2.2rem;
+    padding: 1.2rem;
     position: absolute;
     top: 50%;
-    margin-top: -2.2rem;
-    color: white;
-    font-weight: bold;
     transition: 0.6s ease;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    padding: 1.2rem;
     width: 4rem;
-    height: 4rem;
   }
   /* Position the "next button" to the right */
   .next {
