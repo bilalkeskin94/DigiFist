@@ -51,6 +51,7 @@ html {
 }
 
 .banner-header {
+	display: block;
 	color: var(--color-white);
 	font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
 	font-size: 2rem;
@@ -61,7 +62,8 @@ html {
 	top: 27rem;
 }
 
-.banner-text {
+.banner-text,
+.banner-header-desktop {
 	display: none;
 }
 
@@ -196,7 +198,12 @@ html {
 	}
 
 	.banner-header {
+		display: none;
+	}
+
+	.banner-header-desktop {
 		color: var(--color-primary);
+		display: block;
 		font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
 		font-size: 3.1rem;
 		line-height: 4.1rem;
@@ -232,10 +239,11 @@ html {
 		display: flex;
 		width: 610px;
 		gap: 3.2rem;
-		margin-top: 7.4rem;
+		position: relative;
+		top: 5rem;
 
 		&--items {
-			margin-top: 7.4rem;
+			margin-top: 6.8rem;
 			gap: 3.2rem;
 
 			&--container {
