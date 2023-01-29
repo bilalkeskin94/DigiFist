@@ -112,6 +112,7 @@ html {
 	&--image {
 		height: 20rem;
 		width: 14.8rem;
+		pointer-events: none;
 	}
 
 	&--header {
@@ -251,6 +252,7 @@ html {
 		&--image {
 			height: 31rem;
 			width: 23rem;
+			pointer-events: none;
 		}
 
 		.swatch-container {

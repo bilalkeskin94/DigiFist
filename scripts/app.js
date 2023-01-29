@@ -67,11 +67,30 @@ document.addEventListener(
 	false
 );
 
+document.addEventListener(
+	'mousedown',
+	function (event) {
+		touchstartX = event.clientX;
+		touchstartY = event.clientY;
+	},
+	false
+);
+
+document.addEventListener(
+	'mouseup',
+	function (event) {
+		touchendX = event.clientX;
+		touchendY = event.clientY;
+		handleGesture();
+	},
+	false
+);
+
 function handleGesture() {
-	if (touchendX <= touchstartX) {
+	if (touchendX <= touchstartX && nextButton.style.display != 'none') {
 		plusSlides(1);
 	}
-	if (touchendX >= touchstartX) {
+	if (touchendX >= touchstartX && prevButton.style.display != 'none') {
 		plusSlides(-1);
 	}
 }

@@ -108,6 +108,7 @@ html {
 .cart--image {
   height: 20rem;
   width: 14.8rem;
+  pointer-events: none;
 }
 .cart--header {
   color: var(--color-primary);
@@ -226,6 +227,7 @@ html {
   .cart--image {
     height: 31rem;
     width: 23rem;
+    pointer-events: none;
   }
   .cart .swatch-container {
     float: right;
