@@ -163,8 +163,7 @@ html {
     padding: 9.6rem 10.6rem 0 12rem;
   }
   .hero-banner {
-    background-size: cover;
-    background: url("/images/banner.jpg") no-repeat center top;
+    background: url("/images/banner.jpg") no-repeat center top/cover;
     display: block;
     height: 100vh;
     margin: 0;

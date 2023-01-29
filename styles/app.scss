@@ -181,8 +181,7 @@ html {
     }
 
     .hero-banner {
-        background-size: cover;
-        background: url('/images/banner.jpg') no-repeat center top;
+        background: url('/images/banner.jpg') no-repeat center top / cover;
         display: block;
         height: 100vh;
         margin: 0;
